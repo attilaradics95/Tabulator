@@ -5,44 +5,48 @@ public class Main {
         }
     }
 
-    public static void a(int tabulator){
+    public static void a(int tabulator, int number){
+        number++;
         tabulate(tabulator);
-        System.out.print("a\n");
+        System.out.print(number + "." + "a\n");
         tabulator++;
-        aa(tabulator);
-        bb(tabulator);
+        aa(tabulator,number);
+        bb(tabulator,number);
     }
-    public static void aa(int tabulator){
+    public static void aa(int tabulator, int number){
+        number++;
         tabulate(tabulator);
-        System.out.print("aa\n");
+        System.out.print(number + "." + "aa\n");
         tabulator++;
-        aaa(tabulator);
+        aaa(tabulator,number);
     }
-    public static void aaa(int tabulator){
+    public static void aaa(int tabulator, int number){
+        number++;
         tabulate(tabulator);
-        System.out.print("aaa\n");
+        System.out.print(number + "." + "aaa\n");
     }
 
-    public static void bb(int tabulator){
+    public static void bb(int tabulator, int number){
         tabulate(tabulator);
-        System.out.print("bb\n");
+        System.out.print(number + "." + "bb\n");
     }
 
-    public static void c(int tabulator){
+    public static void c(int tabulator, int number){
         tabulate(tabulator);
-        System.out.print("c\n");
+        System.out.print(number + "." + "c\n");
         tabulator++;
-        cc(tabulator);
+        cc(tabulator,number);
     }
 
-    public static void cc(int tabulator){
+    public static void cc(int tabulator, int number){
         tabulate(tabulator);
-        System.out.print("cc\n");
+        System.out.print(number + "." + "cc\n");
     }
 
     public static void main(String[] args){
         int tabulator = 0;
-        a(tabulator);
-        c(tabulator);
+        int number = 0;
+        a(tabulator, number);
+        c(tabulator, number);
     }
 }
